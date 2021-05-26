@@ -1,0 +1,18 @@
+[03-Jun-2020 23:26:31 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/routes/produtos.php
+Line: 40
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+

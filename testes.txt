@@ -1,0 +1,1 @@
+http://localhost:8080/public/api/v1/produtos/lista
