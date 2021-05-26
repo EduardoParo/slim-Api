@@ -1,0 +1,796 @@
+[03-Jun-2020 16:30:59 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:31:15 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:31:27 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:31:31 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:31:42 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:31:52 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:31:54 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:32:07 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:32:11 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:32:20 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:33:34 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:34:37 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:35:08 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:36:01 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:36:29 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:37:12 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:37:23 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:37:35 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:38:32 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 16:38:41 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 21:29:51 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 21:31:05 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 21:42:02 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 21:52:41 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 21:52:44 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 21:52:47 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 21:52:56 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:00:00 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:00:01 UTC] Slim Application Error:
+Type: RuntimeException
+Message: Insecure use of middleware over HTTP denied by configuration.
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/slim-jwt-auth/src/JwtAuthentication.php
+Line: 133
+Trace: #0 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/tuupola/callable-handler/src/DoublePassTrait.php(47): Tuupola\Middleware\JwtAuthentication->process(Object(Slim\Http\Request), Object(Tuupola\Middleware\CallableHandler))
+#1 [internal function]: Tuupola\Middleware\JwtAuthentication->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Tuupola\Middleware\JwtAuthentication), Array)
+#3 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\App))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/middleware.php(21): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/DeferredCallable.php(57): call_user_func_array(Object(Closure), Array)
+#8 [internal function]: Slim\DeferredCallable->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(70): call_user_func(Object(Slim\DeferredCallable), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Closure))
+#10 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#14 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:03:48 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/routes/produtos.php
+Line: 40
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:03:52 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:04:05 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:11:32 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:18:07 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:18:19 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:18:20 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:18:21 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/slim-api/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[03-Jun-2020 22:25:43 UTC] Slim Application Error:
+Type: Error
+Message: Class 'App\Models\Produto' not found
+File: /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/src/routes/produtos.php
+Line: 17
+Trace: #0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/u574856183/domains/centralcomercial.com.br/public_html/eduardo/public/index.php(35): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
